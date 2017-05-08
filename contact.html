@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	
+    <header class="main-header">
+        <div class="container clearfix">
+			<div class="logo">
+				<a href="index.html"><img src="img/logo3.png" alt="Логотип"></a>
+			</div>
+		    <div class="main-nav">
+                <a href="#" class="small-menu-butt">Меню</a>
+                <ul class="main-nav-list">
+                    <li class="main-nav-item">
+                        <a class="main-nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a class="main-nav-link" href="history.html">История</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a class="main-nav-link" href="view.html">Достопримечательности</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a class="main-nav-link" href="rest.html">Заведения</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a class="main-nav-link" href="album.html">Фотоальбом</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a class="main-nav-link active" href="contact.html">Контакты</a>
+                    </li>
+                </ul>
+		    </div>
+		</div>
+    </header>
+		
+	<div class="contact-content">
+        <h3>Есть вопросы или пожелания?<br>Напишите нам</h3>
+        <form action="send.php" method="post" class="rf">
+            <input type="text" name="text" class="contact-input rfield" placeholder="Ваше имя">
+            <input type="text" name="mail" class="contact-input rfield mailfield" placeholder="Email">
+            <textarea class="contact-area rfield" placeholder="Ваше сообщение"></textarea>
+            <button type="submit" class="btn_submit disabled">Отправить</button>
+        </form>
+    </div>
+			
+	
+	<div class="popup">
+        <div class="popup-button"></div>
+        <p>Спасибо! Письмо отправлено.</p>
+    </div>
+
+    <div id="overlay"></div>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+
+</html>
