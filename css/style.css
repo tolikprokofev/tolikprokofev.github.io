@@ -250,7 +250,7 @@ h1,h2,h3,h4,h5,h6{margin-bottom: 12px;}
     }
     .contact-content{
         width: 300px;
-        height: 320px;
+        min-height: 320px;
         margin-top: -160px;
         margin-left: -150px;
         padding: 10px 20px;
