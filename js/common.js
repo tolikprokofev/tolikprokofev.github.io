@@ -1,15 +1,17 @@
 $(document).ready(function(){
 	
-$('.small-menu-butt').on('click', function(){
-	var list = $('.main-nav-list');
-	if(!list.hasClass('main-nav-show')){
-		list.fadeIn(500).addClass('main-nav-show');
-	}
-	else{
-		list.fadeOut(500).removeClass('main-nav-show');
-	}
+$(function() {
+	var pull = $('.small-menu-butt');
+	var menu = $('.main-nav-list');
+
+	$(pull).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+	});
 });
-    
+
+
+
 /*--------- form check & send ---------*/
     
 (function( $ ){
